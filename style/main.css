@@ -1,0 +1,148 @@
+/* Font chu */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* the styles for the elements */
+body {
+	
+	margin: 0 ;padding :0;
+	background-color: #F5F5F5;
+}
+
+/* the style for the Header */
+header {
+	background-position: center;
+	background-color: black;
+	color: white;
+	padding: 8px 0px 6px 30px;
+	height: 40px;
+}
+.logo {
+	float: left;
+}
+header h1 {
+	display :inline;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	float: left;
+	margin-top: 0px;
+	margin-right: 10px;
+}
+/* the styles for the navigation menu */
+nav ul {
+	display: inline;
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+	float : left;
+	text-align: center;
+}
+nav ul li {
+	display: inline-block;
+ 	padding : 6px;
+ 	position: relative;
+ 	float : left;
+ 	margin-left: 2px;
+ 	margin-top: 10px;
+ }
+ nav ul li a {
+ 	text-decoration: none;
+ 	font-size: ;
+ 	font-family: ;
+ 	color : white;
+ 	font-size: 18px;
+ }
+ #nav {
+ 	font-family: 'Cabin', sans-serif; 
+ }
+.current {
+	background-color:#F5F5F5;
+	padding: 25px 15px 13px 15px;
+	margin: 0;
+}
+.divider {
+	background-color: #FF533D;
+	height:5px;
+}
+.notcurrent:hover {
+	color: #FF533D;
+	margin: 0;
+}
+
+/* th style for images-slider */
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+ /*the style for background-image */
+.background-image {
+	background-image: url(images/martini.jpg);
+	height: 90vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+#delicious {
+	font-family: 'Dancing Script', cursive;
+	margin : 0;
+	padding: 10% 45% 0% 45%;
+	font-size: 80px;
+	color : black;
+
+}
+#maim-quote {
+	font-family: 'Dancing Script', cursive;
+	font-size : 50px;
+	padding: 0 0 0 30% ;
+	margin : 0;
+	color: black;
+ 
+}
+/* the style for the Main */
+
+#introduce {
+	margin : 0;
+	padding: 2% 0% 0% 2%;
+	
+}
+#introduce p {
+	font-size: 20px;
+	padding: 20px 10% 20px 10px;
+}
+
+/* the style for the Footer */
+footer {
+    background-color: black;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+footer .contact p {
+	font-size: 15px;
+	color: white;
+}
