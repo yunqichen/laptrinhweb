@@ -1,105 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Resto - Home Page</title>
-
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="style/main.css">
-	<!--Tao lien ket voi Mang xa hoi ...............................-->
+  </script>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Page</title>
+	<link rel="shortcut icon" href="images/logo.ico">
+	<link rel="stylesheet" type="text/css" href="style/main.css">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
-	.fa {
-	  padding: 10px;
-	  font-size: 10px;
-	  width: 10px;
-	  text-align: center;
-	  text-decoration: none;
-	  margin: 5px 2px;
-	  border-radius: 50%;
-	}
-	.fa:hover {
-	    opacity: 0.7;
-	}
-	.fa-facebook {
-	  background: #3B5998;
-	  color: white;
-	}
-	.fa-instagram {
-	  background: #125688;
-	  color: white;
-	}
-	.fa-twitter {
-	  background: #55ACEE;
-	  color: white;
-	}
-	</style>
-	<!---............................................................ -->
-	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" href="style/animate.css">
+	<script src="wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
-<body>
-	<header>
+<body>	
+	<nav id="nav_menu">
+		<ul>
+			<a href="index.html" id="logo">RESTO BISTRO</a>			
+			<li><a href="index.html" class="current" >Home</a>
+				<ul id="sub_menu">
+			        <li><a href="#history">History</a></li>
+			        <li><a href="#gallery">Gallery</a></li>
+			        <li><a href="#cathering">Cathering</a></li> 
+			        <li><a href="#location">Location</a></li>      
+			    </ul>
+		    </li>
+			<li><a href="menu.html" class="notcurrent" >Menu</a></li>
+			<li><a href="blog.html" class="notcurrent">Blog</a></li>
+			<li><a href="reservation.html" class="notcurrent">Reservation</a></li>	
+		</ul>
+	</nav>	
+	<div id="img-slide">
 		<div class="container">
-			<img src="" alt="logo" class="logo">
-			<nav>
-				<h1>RESTO BISTO</h1>
-				<ul id="nav">					
-					<li><a href="index.html" class="current" >Home</a></li>
-					<li><a href="menu.html" class="notcurrent" >Menu</a></li>
-					<li><a href="event.html" class="notcurrent">Event</a></li>
-					<li><a href="reservation.html" class="notcurrent"s>Reservation</a></li>	
-				</ul>
-			</nav>	
-		</div>		
-	</header>
-	<div class="divider"> </div>
-		
-	<main>
-		<div class="background-image">
-			<h1 id="delicious">Delicious</h1>
-			<h2 id="maim-quote">Food to fit your lifestyle and health</h2>
+		  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="1"></li>
+		      <li data-target="#myCarousel" data-slide-to="2"></li>
+		    </ol>
+
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner">
+		      <div class="item active">
+		        <img src="images/500px/martini.jpg" alt="" style="width:100%;height : 600px;">
+		        <div class="carousel-caption">
+		          <h3 class="wow bounceInUp" style="font-family:'Dancing Script',cursive;font-size: 60px;color : black;">Delicious</h3>
+		          <p class="wow bounceInRight" style="font-family:'Dancing Script',cursive;font-size: 30px;color : black;">Food to fit your lifestyle and health</p>
+		        </div>
+		      </div>
+
+		      <div class="item">
+		        <img src="images/500px/begin.jpg" alt="" style="width:100%;height : 600px;">
+		        <div class="carousel-caption" style="background-color: white; color: black; font-size: 20px;">
+		          	<quote>
+						<p>Life is a celebration. Enjoy it well.</p>
+						<cite>— Uruj Shahid</cite>
+					</quote>
+		        </div>
+		      </div>
+		    
+		      <div class="item">
+		        <img src="images/500px/reserved.jpg" alt="" style="width:100%; height : 600px;">
+		        <div class="carousel-caption">
+		          <p style="font-size: 45px; color: black; font-family: 'Cabin', sans-serif;">Make a reservation</p>
+		          <a href="reservation.html" style="display: inline; color: white; background-color: black; font-size: 25px ; margin-bottom: 10%;padding: 5px; border : 5px solid white;">Click here</a>
+		        </div>
+		      </div>		  
+		    </div>
+
+		    <!-- Left and right controls -->
+		    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+		      <span class="glyphicon glyphicon-chevron-left"></span>
+		      <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+		      <span class="glyphicon glyphicon-chevron-right"></span>
+		      <span class="sr-only">Next</span>
+		    </a>
+		  </div>
 		</div>
-		<base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
-		<div id="slider">
-			<figure>
-				<img src="http://odessarest.com.ua/tpl/img/slide1.jpg" alt>
-				<img src="http://odessarest.com.ua/tpl/img/slide2.jpg" alt=>
-				<img src="http://odessarest.com.ua/tpl/img/slide12.jpg" alt>
-				<img src="http://odessarest.com.ua/tpl/img/slide10.jpg" alt>
-				<img src="http://odessarest.com.ua/tpl/img/slide4.jpg" alt>
-			</figure>
-		</div>
-		<div id="introduce">
-			<p>
-				Restaurant is a place for simplicity. Good food, good beer, and good service. Simple is the name of the game, and we’re good at finding it in all the right places, even in your dining experience. We’re a small group from Denver, Colorado who make simple food possible. Come join us and see what simplicity tastes like.
-			</p>
-		</div>
-		<div class="text">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero qui error, nesciunt quam laborum nihil cupiditate delectus pariatur facilis odio suscipit provident blanditiis, quod. Blanditiis dolorem quo illum voluptatem maiores.</p>
-			<p>Nihil adipisci quo velit totam, voluptatum voluptas vero voluptatem odio sit ipsam quis quibusdam quasi voluptatibus dolorum fuga vel corrupti facere voluptates, unde officiis. Enim nobis ipsam veritatis qui a?</p>
-			<p>Esse in, architecto est eius. Quia dicta modi magni, non labore, iusto accusantium assumenda soluta ab quis suscipit vero doloremque quos. Dicta tempore aliquam saepe distinctio optio veritatis iure minima.</p>
-			<p>Sapiente impedit ea deserunt architecto ipsa qui modi, nemo iste adipisci, nihil quidem, non tenetur. Esse dolorem aperiam quaerat sequi, nostrum voluptate eveniet blanditiis voluptatum soluta error sapiente fugit! Quae.</p>
-			<p>Voluptate mollitia ipsum consequatur dolor eaque nesciunt. Provident eveniet ratione, alias ad aliquam totam! Illo cum nostrum, adipisci porro quisquam ipsum autem enim iusto eius, optio dolorem, voluptates iure voluptate.</p>
-			<p>Ducimus mollitia cumque quia, natus sint beatae impedit ad. Libero doloribus nostrum perspiciatis, officiis provident quidem, in ratione aut id enim necessitatibus sit modi. Quidem, tempora ipsum nulla dicta voluptatum?</p>
-			<p>Nisi recusandae rem culpa, doloribus est perspiciatis atque possimus explicabo, ipsum corrupti dolore officia eius vitae ipsam iste. Dignissimos quasi sunt dolor, at commodi nemo quae vitae? Hic, temporibus, amet?</p>
-			<p>Aspernatur a accusantium incidunt sit excepturi? Blanditiis ratione ex, repellendus? Repellat, eius officiis mollitia, ad quia, quam nihil voluptates aperiam rem sit modi voluptatum alias. Optio, at perferendis. Cumque, commodi!</p>
-			<p>Nostrum sit facere ad voluptate et a voluptates, ea, perspiciatis consequuntur, fugiat animi nesciunt eligendi quidem temporibus veritatis quis, dolore illo sunt excepturi pariatur tenetur. Quasi laboriosam similique explicabo voluptas!</p>
-			<p>Ducimus labore quas, quae non quaerat molestias excepturi fugiat cum obcaecati minima deserunt a, voluptates inventore error similique, molestiae rem placeat aliquid, distinctio dicta dolores. Aperiam, cupiditate, omnis! Ipsum, beatae.</p>
-		</div>
-	</main>
-	<footer>
-			<div class="social">
-				<a href="#" class="fa fa-facebook"></a>
-				<a href="#" class="fa fa-instagram"></a>
-				<a href="#" class="fa fa-twitter"></a>
+
+	</div>
+	<br></br>
+	<div id="history">
+		<div class="w3-content" style="max-width:1100px">
+		  <!-- About Section -->
+		  	<div class="w3-row w3-padding-64" id="about">
+		    	<div class="w3-col m6 w3-padding-large w3-hide-small" style="margin-top: 10%; box-shadow: 10px 10px 5px grey; ">
+		     		<img src="images/pic.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="500">
+		    	</div>
+
+		    	<div class="w3-col m6 w3-padding-large">
+		      		<h1 class="w3-center" style="font-family:'Dancing Script',cursive; font-size: 50px;">History</h1><br>
+				    <p style="font-size: 24px; font-family:Times New Roman, Georgia, Serif;" class="wow bounceInRight">In 2003, we began with a simple philosophy that holds true today: serve honest, local ingredients, with informed service, in a comfortable setting. Once a humble corner bistro, FIG has blossomed into one of the Southeast’s top culinary destinations. The staff is passionate and polite. The room is simple and modern. The menu is creative and seasonal..</p><br>
+				    <p style="font-size: 24px; font-family:Times New Roman, Georgia, Serif;" class="wow bounceInLeft">The menu is the heart and soul of the restaurant. It will change often, fluctuating with the seasons and availability of product. We are relentless in our pursuit of the freshest products, which are constantly inspiring and defining our work. We have curated a family of purveyors. Paying respect to their efforts and traditions is essential to our mission..</p>
+		    	</div>
+		  	</div>	
+		</div>	
+	</div>
+	<hr>
+	<div id="gallery">
+		<div class="w3-display-container w3-content w3-center" style="max-width:1500px">
+			<img class="w3-image" src="images/imgg.jpg" alt="Me" width="100%" height="600">
+			<div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+				<h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">GALLERY</h1>
+			    <h5 class="w3-hide-large" style="white-space:nowrap">GALLERY</h5>
+			    <h3 class="w3-hide-medium w3-hide-small">Little things to see</h3>
 			</div>
-			<div class="contact">
-				<p></p>
-				<p></p>
-				<p>&copy; 2017 All Right Reserved</p>
+			<p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+		</div>
+		<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+		  <div class="w3-third">
+		  	<img src="images/Menu/food21.jpg" style="width:100%" class="w3-hover-opacity" >
+		    <img src="images/Menu/food6.jpg" style="width:100%" class="w3-hover-opacity" >
+		    <img src="images/Restaurant7.jpg" style="width:100%" class="w3-hover-opacity">
+		    <img src="images/Menu/food12.jpg" style="width:100%" class="w3-hover-opacity">
+		    <img src="images/Menu/food10.jpg" style="width:100%" class="w3-hover-opacity">
+		    <img src="images/Menu/food11.jpg" style="width:100%" class="w3-hover-opacity">
+		  </div>
+
+		  <div class="w3-third">
+		  	<img src="images/Restaurant5.jpg" style="width:100%" class="w3-hover-opacity">   
+		    <img src="images/Menu/food13.jpg" style="width:100%" class="w3-hover-opacity">
+		    <img src="images/Menu/food14.jpg" style="width:100%" class="w3-hover-opacity">
+		    <img src="images/Menu/fruits.jpg" style="width:100%" class="w3-hover-opacity">
+		    <img src="images/Menu/food19.jpg" style="width:100%" class="w3-hover-opacity">
+		    <img src="images/Menu/food16.jpg" style="width:100%" class="w3-hover-opacity">
+		    <img src="images/Menu/drink.jpg" style="width:100%" class="w3-hover-opacity">
+		  </div>
+		  <div class="w3-third">
+		  	<img src="images/Menu/flower.jpg" style="width:100%" class="w3-hover-opacity">
+		  	<img src="images/500px/restaurant8.jpg" style="width:100%" class="w3-hover-opacity">		    
+		    <img src="images/Menu/food24.png" style="width:100%" class="w3-hover-opacity">
+		    <img src="images/Menu/food25.jpg" style="width:100%" class="w3-hover-opacity">
+		    <img src="images/Menu/food23.jpg" style="width:100%" class="w3-hover-opacity">
+		    <img src="images/Menu/food22.jpg" style="width:100%" class="w3-hover-opacity">
+		    <img src="images/Menu/food20.jpg" style="width:100%" class="w3-hover-opacity">	    
+		  </div>
+		</div>
+		<!-- Modal for full size images on click-->
+		<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+		  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+		  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+		    <img id="img01" class="w3-image">
+		    <p id="caption" class="w3-opacity w3-large"></p>
+		  </div>
+		</div>
+		<script>
+		// Toggle grid padding
+		function myFunction() {
+		    var x = document.getElementById("myGrid");
+		    if (x.className === "w3-row") {
+		        x.className = "w3-row-padding";
+		    } else { 
+		        x.className = x.className.replace("w3-row-padding", "w3-row");
+		    }
+		}
+
+		// Open and close sidebar
+		function w3_open() {
+		    document.getElementById("mySidebar").style.width = "100%";
+		    document.getElementById("mySidebar").style.display = "block";
+		}
+
+		function w3_close() {
+		    document.getElementById("mySidebar").style.display = "none";
+		}
+
+		</script>
+	</div>
+	<div id="cathering">
+		<div class="w3-content" style="max-width:1100px">
+		  <!-- About Section -->
+		  	<div class="w3-row w3-padding-64" id="about">
+		    	<div class="w3-col m6 w3-padding-large w3-hide-small">
+		     		<img src="images/Cathering4.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" height="400">
+		    	</div>
+
+		    	<div class="w3-col m6 w3-padding-large"">
+		      		<h1 class="w3-center" style="font-family:'Dancing Script',cursive; font-size: 50px;">Catering</h1><br>
+				    <h5 class="w3-center">Tradition since 2003</h5>
+				    <p style="font-size: 24px; font-family:Times New Roman, Georgia, Serif;" class="wow bounceInRight">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p><hr>
+				    <p style="font-size: 20px; font-family:Times New Roman, Georgia, Serif;" class="wow bounceInRight">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		    	</div>
+		  	</div>
+		</div>
+	</div>
+	<hr>
+	<div id="location">
+		<div class="w3-container w3-light-grey" style="padding:10px 10px" id="contact" style="font-family: 'Cabin', sans-serif; "">
+			<h3 class="w3-center" style="font-size: 50px; font-family:'Dancing Script',cursive;"><b>LOCATION</b></h3>
+			<div class="w3-row-padding" style="margin-top:64px">
+			    <div class="w3-half">
+			    	<h2>Openning Hours :</h2>
+			    	<p>Mon - Fri: 10am - 10pm</p>
+			    	<p>Sat - Sun: 10am - 11pm</p>
+			    	<br>
+				    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>155 Su Van Hanh,Distric 10,HCM city</p>
+				    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +84 123-456-789</p>
+				    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: bistro@mail.com</p>
+				    <br>
+				    <div class="social">
+						<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+						<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+						<a href="https://twitter.com/" class="fa fa-twitter"></a>
+					</div>
+				</div>
+				<div class="w3-half">
+					<!-- Add Google Maps -->
+					<div id="map" style="width:500px;height:500px;">
+					    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.460389051303!2d106.66536921380911!3d10.776007462150478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752edba023732b%3A0xdae17784435db03!2zSFVGTElUICjEkOG6oWkgaOG7jWMgTmdv4bqhaSBuZ-G7ryAtIFRpbiBo4buNYyBIQ00p!5e0!3m2!1svi!2s!4v1512994236448" width="400" height="450" frameborder="0" style="border:5px solid white; box-shadow: 10px 10px 5px grey;;" allowfullscreen ></iframe>
+					</div>
+				</div>
 			</div>
+		</div>
+	</div>
+	<footer>		
+		<div class="contact">
+			<table>
+	 			<thead>
+		 			<tr>
+			 			<th>Address</th>
+			 			<th>Opening hours</th>
+			 			<th>Contact</th>
+			 			<th>Follow</th>
+			 		</tr>
+	 			</thead>
+		 		<tbody>
+		 			<tr>
+			 			<td>155 Su Van Hanh</td>
+			 			<td>Mon - Fri: 10am - 10pm</td>
+			 			<td>123-456-789</td>
+			 			<td rowspan="2">
+			 				<div class="social">
+								<a href="#" class="fa fa-facebook"></a>
+								<a href="#" class="fa fa-instagram"></a>
+								<a href="#" class="fa fa-twitter"></a>
+							</div>
+						</td>
+			 		</tr>
+			 		<tr>
+			 			<td>P8 Q10 TPHCM VIETNAM</td>
+			 			<td>Sat - Sun: 10am - 11pm</td>
+			 			<td>odessa@resto.com</td>
+			 			<td></td>
+			 		</tr>
+			 	</tbody>
+			 </table>			
+			</div>
+			<p style="color: white; margin:0px; padding-top: 20px ; padding-left:40%; ">&copy; 2017 All Right Reserved</p>
+			<div id='bttop'>BACK TO TOP</div>
+			<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js' type='text/javascript'></script>
+			<script type='text/javascript'>
+			$(function() {
+				 $(window).scroll(function() {
+					 if ($(this).scrollTop() != 0) {
+					 $('#bttop').fadeIn();} 
+					 else {
+					 $('#bttop').fadeOut();
+					 }
+					 });
+					 $('#bttop').click(function() {
+					 $('body,html').animate({
+					 scrollTop: 0
+					 }, 800);
+				 });
+			});
+	</script>
 	</footer>
+	
 </body>
 </html>

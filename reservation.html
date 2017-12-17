@@ -3,30 +3,106 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Resto - Reservation</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reservation</title>
+	<link rel="shortcut icon" href="images/logo.ico">
+	<link rel="stylesheet" type="text/css" href="style/reservation.css">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<style>
+	body,h1,h5 {font-family: "Raleway", sans-serif}
+	body, html {height: 100%}
+	.bgimg {
+	    background-image: url('images/reservation.jpg');
+	    min-height: 100%;
+	    background-position: center;
+	    background-size: cover;
+	}
+	</style>
+	<body>
+		<nav id="nav_menu">
+			<ul>
+				<a href="index.html" id="logo">RESTO BISTRO</a>			
+				<li><a href="index.html" class="notcurrent" >Home</a>
+					<ul id="sub_menu">
+				        <li><a href="#history">History</a></li>
+				        <li><a href="#gallery">Gallery</a></li>
+				        <li><a href="#cathering">Cathering</a></li> 
+				        <li><a href="#location">Location</a></li>      
+				    </ul>
+			    </li>
+				<li><a href="menu.html" class="notcurrent" >Menu</a></li>
+				<li><a href="blog.html" class="notcurrent">Blog</a></li>
+				<li><a href="reservation.html" class="current">Reservation</a></li>	
+			</ul>
+		</nav>
+		<div class="bgimg w3-display-container w3-text-white">
+	  <div class="w3-display-middle w3-jumbo">
+	    <p>logo</p>
+	  </div>
+	  <div class="w3-display-topleft w3-container w3-xlarge">
+	    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
+	  </div>
+	</div>
 
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="style/main.css">
-	<script type="text/javascript" src="js/main.js"></script>
-</head>
-<body>
-	<header>
-		<div class="container">
-			<img src="" alt="logo" class="logo">
-			<nav>
-				<h1>RESTO BISTO</h1>
-				<ul id="nav">					
-					<li><a href="index.html" class="notcurrent" >Home</a></li>
-					<li><a href="menu.html" class="notcurrent" >Menu</a></li>
-					<li><a href="event.html" class="notcurrent">Event</a></li>
-					<li><a href="reservation.html" class="current"s>Reservation</a></li>	
-				</ul>
-			</nav>	
-		</div>		
-	</header>
-	<div class="divider"> </div>
-	<main>
 
-	</main>
+	<!-- Contact Modal -->
+	<div id="contact" class="w3-modal">
+	  <div class="w3-modal-content w3-animate-zoom">
+	    <div class="w3-container w3-black">
+	      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+	      <h1>Contact</h1>
+	    </div>
+	    <div class="w3-container">
+	      <p>Reserve a table, ask for today's special or just send us a message:</p>
+	      <form action="/action_page.php" target="_blank">
+	        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+	        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+	        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+	        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+	        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+	      </form>
+	    </div>
+	  </div>
+	</div>
+	<footer>
+		<div class="contact">
+			<table>
+	 			<thead>
+		 			<tr>
+			 			<th>Address</th>
+			 			<th>Opening hours</th>
+			 			<th>Contact</th>
+			 			<th>Follow</th>
+			 		</tr>
+	 			</thead>
+		 		<tbody>
+		 			<tr>
+			 			<td>155 Su Van Hanh</td>
+			 			<td>Mon - Fri: 10am - 10pm</td>
+			 			<td>123-456-789</td>
+			 			<td rowspan="2">
+			 				<div class="social">
+								<a href="#" class="fa fa-facebook"></a>
+								<a href="#" class="fa fa-instagram"></a>
+								<a href="#" class="fa fa-twitter"></a>
+							</div>
+						</td>
+			 		</tr>
+			 		<tr>
+			 			<td>P8 Q10 TPHCM VIETNAM</td>
+			 			<td>Sat - Sun: 10am - 11pm</td>
+			 			<td>odessa@resto.com</td>
+			 			<td></td>
+			 		</tr>
+			 	</tbody>
+			 </table>
+				
+			</div>
+			<p style="color: white; margin:0px; padding-top: 20px ; padding-left:40%; ">&copy; 2017 All Right Reserved</p>
+			<p></p>
+			
+	</footer>
 </body>
 </html>
